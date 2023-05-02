@@ -1,0 +1,17 @@
+
+{
+    "default": {
+            "image": "../../assets/img/d8aaa0719185b24ecb075332c57b69aac6d9cb7843bc005de2b363f5048f3529.jpg", 
+            "destination": "Paris, France", 
+            "departing": "02/12/2023", 
+            "forecast": "Mostly cloudly throughout the day.",
+            "highest": 25,
+            "lowest": 20,
+            "lodging": "", 
+            "packages": "", 
+            "notes": "",
+
+            "_comment": "image in unneccessary for default because webpack require (local image) must be static"
+        }
+
+}

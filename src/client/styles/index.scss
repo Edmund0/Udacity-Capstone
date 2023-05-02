@@ -1,0 +1,26 @@
+@use "articles";
+@use "base";
+
+@use "layout";
+@use "states";
+
+*   {
+    vertical-align: baseline;
+    font-weight: inherit;
+    font-family: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    border: 0 none;
+    outline: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    }
+
+    /* Reset Source: https://perishablepress.com/a-killer-collection-of-global-css-reset-styles/ */
+
+/*************************************************************************************************************/
+/**                                                                                                         **/
+/**  INDEX.CSS shall serve as the access point for all CSS files || It would also be the custom RESET CODE  **/
+/**                                                                                                         **/
+/*************************************************************************************************************/

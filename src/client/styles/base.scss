@@ -1,0 +1,64 @@
+/************************************************************************************************************/
+/**                                                                                                        **/
+/**  BASE.CSS shall serve as the BASE CODE for CSS || It shall house the most general styles (defaults)    **/
+/**                                                                                                        **/
+/************************************************************************************************************/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*
+{ /* General Font || Have No Choice but to use this otherwise it would not look like image */
+  font-family: 'Inter';
+  font-style: normal;
+  font-size: medium;
+}
+
+body 
+{
+  background-color: white;
+}
+
+
+h1  
+{
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+h2
+{
+    font-size: large;
+    font-weight: bold;
+}
+
+h3
+{
+    font-size: medium;
+    font-weight: bold;
+}
+
+input {
+  padding: 10px 14px;
+  gap: 8px;
+  border-radius: 8px;
+  margin: 0px;
+
+  box-sizing: border-box;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+
+label {
+  color: rgb(48, 48, 48);
+  font-weight: bold;
+}
+
+textarea {
+  padding: 10px 14px;
+  gap: 8px;
+  border-radius: 8px;
+  margin: 0px;
+}

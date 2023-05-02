@@ -7,6 +7,42 @@
     <title>Document</title>
 </head>
 <body>
+
+    <div class="appContainer">
+        <header>
+            <h1 class="">Travel Planner</h1>
+            <div class="">
+                <div>My Trips:</div>
+                <div class="addButton">add trip</div>
+            </div>
+        </header>
+
+        <main>
+            <!-- Articles for each trip would be injected into this section element (similar to react and vhtml)-->
+            <section id ="root"></section>
+        </main>
+
+        <!-- Aside contains the Form needed to create a new TRIP -->
+        <aside>
+            <h2>CREATE NEW TRIP</h2>
+            <form action="" class="addTrip">
+                <div class="mainForm">
+                    <div class="destinationForm">
+                        <label for="name">Destination: </label>
+                        <input type="text" name="name" id="name" placeholder = "Enter Location" size="30" required>
+                    </div>
+                    <div class="departureForm">
+                        <label for="date">Departure Date: </label>
+                        <input type="date" id="date" name="date" value="2023-01-01" min="2000-01-01" required>
+                    </div>
+                </div>
+                <div class="submit">
+                    <input type="submit" value="submit">
+                </div>
+            </form>
+        </aside>
+    </div>
     
+
 </body>
 </html>

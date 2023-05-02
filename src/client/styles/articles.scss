@@ -1,0 +1,313 @@
+
+
+/*******************************************************/
+/*                                                     */
+/*      SMACSS STYLE MODULE FOR EACH TRIP ARTICLE      */
+/*                                                     */
+/*******************************************************/
+
+form.inputInfo {
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 5px;
+  
+    div {
+  
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      gap: 5px;
+  
+    }
+  
+    input {
+        width: 50%;
+        color: aliceblue;
+        background-color: rgb(42, 117, 238);
+
+        &[type="button"] {
+
+            background-color: rgb(238, 42, 65);
+        }
+    }
+  
+  }
+
+/****************************************/
+/*  BEYOND MOBILE FIRST 320PX TO 480PX  */
+/****************************************/
+
+article.tripContainer {
+
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    height: auto;
+    padding: 10px;
+
+    div.tripCard {
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(auto-fill, 200px);
+
+        padding: 10px;
+        background-color: bisque;
+        border-radius: 10px;
+
+        gap: 10px;
+
+            img {
+                width: 100%;
+                height: 200px;
+                object-fit: cover;
+                padding: 5px
+            }
+
+            div.tripMain {
+
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                height: 200px;
+                padding: 0px 5px;
+
+                div.summaryTrip {
+                    
+                    display: flex;
+                    flex-direction: column;
+                    padding: 5px 0px;
+
+
+                    div.destinationTrip {
+
+                    }
+
+                    div.departingTrip {
+
+                    }
+                }
+
+                div.flightInfo {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    padding: 5px 0px;
+                    height: 100%;
+                    
+                        & > div{
+                            display: flex;
+                            flex-direction: column;
+                        }
+                }
+
+                div.editTrip {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 5px 0px;
+
+
+                    div.saveTrip {
+
+                        display: inline-block;
+                        height: 40px;
+                        width: 100px;
+                        border: 2px solid white;
+                        padding: 8px;
+
+                        div {display: flex; flex-direction: row; align-items: center; justify-content: center;}
+    
+                    }
+
+                    div.removeTrip {
+
+                        display: inline-block;
+                        height: 40px;
+                        width: 100px;
+                        border: 2px solid black;
+                        padding: 8px;
+
+                        div {display: flex; flex-direction: row; align-items: center; justify-content: center;}
+
+                    }
+
+                }
+
+            }
+
+            div.tripAside {
+
+                display: flex;
+                flex-direction: column;
+                padding: 5px;
+                gap: 5px;
+
+
+                .forecastContent {
+
+                    font-size: small;
+                    padding: 5px 0px 0px 15px;
+
+                }
+
+
+            }
+
+            div.infoOption {
+
+                display: flex;
+                flex-direction: column;
+                padding: 5px;
+                gap: 5px;
+
+            }
+    }
+
+}
+
+/***************************************/
+/*  BEYOND MOBILE FIRST 480PX to 720PX */
+/***************************************/
+
+@media screen and (width >= 480px) {
+
+    article.tripContainer {
+    
+        div.tripCard {
+    
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: repeat(auto-fill, 200px);
+    
+                img {
+
+                }
+    
+                div.tripMain {
+
+    
+                    div.summaryTrip {
+
+    
+                        div.destinationTrip {
+    
+                        }
+    
+                        div.departingTrip {
+    
+                        }
+                    }
+    
+                    div.flightInfo {
+      
+
+                    }
+    
+                    div.editTrip {
+    
+                        padding: 6px 0px;
+
+                        div.saveTrip {
+    
+    
+                            div {}
+        
+                        }
+    
+                        div.removeTrip {
+    
+                            div {}
+    
+                        }
+    
+                    }
+    
+                }
+    
+    
+            div.tripAside {
+     
+                grid-column: 1 ;
+                grid-row: 2;
+    
+            }
+        }
+    
+    }
+}
+
+
+/*******************************/
+/*  BEYOND MOBILE FIRST 720PX  */
+/*******************************/
+
+@media screen and (width >= 720px) {
+
+    article.tripContainer {
+    
+        div.tripCard {
+    
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: repeat(auto-fill, 200px);
+    
+                img {
+
+
+                }
+    
+                div.tripMain {
+    
+    
+                    div.summaryTrip {
+
+    
+                        div.destinationTrip {
+    
+                        }
+    
+                        div.departingTrip {
+    
+                        }
+                    }
+    
+                    div.flightInfo {
+
+                    }
+    
+                    div.editTrip {
+    
+
+                        div.saveTrip {
+    
+    
+                            div {}
+        
+                        }
+    
+                        div.removeTrip {
+    
+                            div {}
+    
+                        }
+    
+                    }
+    
+                }
+
+                div.tripAside {
+     
+                    grid-column: 3;
+                    grid-row: 1;
+        
+                }
+    
+            }
+    
+    }
+}
