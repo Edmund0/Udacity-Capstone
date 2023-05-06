@@ -128,7 +128,7 @@ body > * {
 /*  BEYOND MOBILE FIRST 600PX  */
 /*******************************/
 
-@media screen and (width >= 600px) {
+@media screen and (min-width: 600px) {
 
     .appContainer {
 
