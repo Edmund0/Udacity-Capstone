@@ -22,13 +22,19 @@
     // Initialize the main project folder
     app.use(express.static('client'));
 
+    // Prevents Fetch from being rejected due to it coming from a different domain
+    app.use(function(req, res, next) {
+        res.header("Access-Control-Allow-Origin", "*");
+        res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+        next();
+      });
 
 /**********************************/
 /*      EXPRESS SERVER SETUP      */
 /**********************************/
 
     // Setup Server
-    port = 8000;
+    port = 8081;
     host = 'localhost';                                     // For testing only (DELETE HOST LATER)!
 
     function listening() {  
@@ -44,19 +50,19 @@
 /*      EXPRESS ROUTES SETUP      */
 /**********************************/
 
-// Setup empty JS object to act as endpoint for all routes
-let projectData = {};
+const generalAnalysis = require('./allAPI')
 
-    // Add a GET route that returns the projectData object
-    app.get('/projectData', function (request, response) {
-        response.send(projectData); 
+/* BASIC ROUTES FOR API */
+let formData = ""
+
+    app.post('/sendData', async function (req, res) {
+        
+        formData = req.body.formData
+        try {res.send(await generalAnalysis(formData));
+
+        }catch {
+            res.send({"error": "invalid destination"});
+        }
+
     })
 
-    // Add a POST route that adds incoming data to the projectData object. (Confusion)
-    app.post('/projectData', function (request, response) {
-
-        let newEntry = request.body;
-
-        projectData = newEntry; 
-        console.log(projectData);
-     })

@@ -5,6 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- I do not care if this is bad practice | this script keeps getting rendered as text when placed in the body tag | and no sources can help me! -->
+    <script>
+        () => {if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker
+                    .register('/service-worker.js')
+                    .then(registration => console.log('The service-worker has registered'))
+                    .catch(error => console.log('An error has occurred', error));
+            });
+        }};
+    </script>
 </head>
 <body>
 
@@ -37,12 +48,11 @@
                     </div>
                 </div>
                 <div class="submit">
-                    <input type="submit" value="submit">
+                    <input type="button" value="submit">
                 </div>
             </form>
         </aside>
     </div>
     
-
 </body>
 </html>

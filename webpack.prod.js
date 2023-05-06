@@ -22,6 +22,17 @@ module.exports = {
             },
 
             {
+                type: 'javascript/auto',
+                test: /\.json$/,
+                exclude: /node_modules/,
+                use: [ 
+                    {
+                        loader: 'json-loader'
+                    },
+                 ]
+            },
+
+            {
                 test: /\.(png|jpe?g|gif)$/i,
                 use: [
                   {

@@ -1,7 +1,7 @@
 
 
 .hidden {
-    display: none;
+    display: none !important;
 }
 
 .addButton {
@@ -47,7 +47,14 @@
     justify-content: center;
     align-items: center;
 
+    font-size: small;
+
     &:hover {
         cursor: pointer;
     }
+}
+
+.cancelled {
+
+    background-color: grey !important;
 }

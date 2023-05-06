@@ -6,6 +6,11 @@
 /*                                                     */
 /*******************************************************/
 
+
+/*********************************************/
+/*  VARIOUS "SUBMODULES" FOR ARTICLE MODULE  */
+/*********************************************/
+
 form.inputInfo {
 
     display: flex;
@@ -35,9 +40,14 @@ form.inputInfo {
   
   }
 
-/****************************************/
-/*  BEYOND MOBILE FIRST 320PX TO 480PX  */
-/****************************************/
+.infoData  {
+    font-size: small;
+    padding: 5px 0px 0px 5px;
+}
+
+/*********************************************************/
+/*  ARTICLE MODULE - BEYOND MOBILE FIRST 320PX TO 480PX  */
+/*********************************************************/
 
 article.tripContainer {
 
@@ -102,6 +112,14 @@ article.tripContainer {
                             display: flex;
                             flex-direction: column;
                         }
+
+                        div.flightInfoContainer {
+
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+                            width: 100%;
+                        }
                 }
 
                 div.editTrip {
@@ -112,7 +130,7 @@ article.tripContainer {
                     padding: 5px 0px;
 
 
-                    div.saveTrip {
+                    div.cancelTrip {
 
                         display: inline-block;
                         height: 40px;
@@ -170,9 +188,9 @@ article.tripContainer {
 
 }
 
-/***************************************/
-/*  BEYOND MOBILE FIRST 480PX to 720PX */
-/***************************************/
+/********************************************************/
+/*  ARTICLE MODULE - BEYOND MOBILE FIRST 480PX to 720PX */
+/********************************************************/
 
 @media screen and (width >= 480px) {
 
@@ -212,7 +230,7 @@ article.tripContainer {
     
                         padding: 6px 0px;
 
-                        div.saveTrip {
+                        div.cancelTrip {
     
     
                             div {}
@@ -242,9 +260,9 @@ article.tripContainer {
 }
 
 
-/*******************************/
-/*  BEYOND MOBILE FIRST 720PX  */
-/*******************************/
+/************************************************/
+/*  ARTICLE MODULE - BEYOND MOBILE FIRST 720PX  */
+/************************************************/
 
 @media screen and (width >= 720px) {
 
@@ -283,7 +301,7 @@ article.tripContainer {
                     div.editTrip {
     
 
-                        div.saveTrip {
+                        div.cancelTrip {
     
     
                             div {}
