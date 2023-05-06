@@ -41,7 +41,7 @@
     flex-direction: row;
     border: 2px solid;
     border-color: black;
-    border-radius: 50px;
+    border-radius: 25px;
     width: fit-content;
     padding: 2px 6px;
     justify-content: center;
@@ -51,6 +51,12 @@
 
     &:hover {
         cursor: pointer;
+    }
+
+    &[data-index="flight"] {
+
+        
+
     }
 }
 

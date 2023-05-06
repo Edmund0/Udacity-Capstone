@@ -3,8 +3,8 @@
 - [ ] Please figure out how to get webpack to dynamically include JSON (as this file acts as a shared database!) (might be a misconception on my path | there may not be any problem). JSON FILE itself and any REQUIRE statement (must be valid) [MOST_LIKELY_NOT_A_PROBLEM]
     - [ ] TEST SOLUTION » [TEST_PRODUCTION_MODE]
 
-- [ ] CSS Breakpoints are being ignored in SAFARI!!!!
-- [ ] FLIGHT DETAIL CSS NEEDS SOME SERIOUS WORK!!!!!!
+- [ ] CSS Breakpoints are being ignored in SAFARI!!!! [COMPLETE]
+- [ ] FLIGHT DETAIL CSS NEEDS SOME SERIOUS WORK!!!!!! [COMPLETE]
 
 - [ ] SERVICE WORKER IN TEXT [COMPLETE]
 - [ ] JEST NOT PASSING TEST [COMPLETE]

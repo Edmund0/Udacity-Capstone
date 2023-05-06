@@ -51,10 +51,10 @@ function ArticlesTrip(value = undefined) {// why must values be in {} for this f
                         <div className="destinationTrip"><span className="boldText">Destination: </span>{destination}</div>
                         <div className="departingTrip"><span className="boldText">Departure Date: </span>{depatureDate}</div>
                     </div>
-                    <div className="flightInfo">
+                    <div className="flightInfo infoBox">
                         <div className="flightInfoContainer">
-                            <div>Flight Details:</div>
-                            <div>
+                            <div className="infoTitle">Flight Detail:</div>
+                            <div className="infoMain">
                                 <div className="flightInfoData infoData">{flight}</div>
                             </div>
                             <div className="editButton" data-index={index} data-type="flight">edit</div>
@@ -95,10 +95,10 @@ function ArticlesTrip(value = undefined) {// why must values be in {} for this f
                     <div className="addButton" data-index={index} data-type="notes"    >add notes</div>
                 </div>
 
-                <div className="lodgingInfo hidden">
+                <div className="lodgingInfo infoBox hidden">
                     <div className="lodgingInfoContainer hidden">
-                        <div>Lodging: </div>
-                        <div>
+                        <div className="infoTitle">Lodging: </div>
+                        <div className="infoMain">
                             <div className="lodgingInfoData infoData">{lodging}</div>
                         </div>
                         <div className="editButton" data-index={index} data-type="lodging">edit</div>
@@ -112,10 +112,10 @@ function ArticlesTrip(value = undefined) {// why must values be in {} for this f
                     </form>
                 </div>
 
-                <div className="packagesInfo hidden">
+                <div className="packagesInfo infoBox hidden">
                     <div className="packagesInfoContainer hidden">
-                        <div>Package List: </div>
-                        <div>
+                        <div className="infoTitle">Package List: </div>
+                        <div className="infoMain">
                             <div className="packagesInfoData infoData">{packages}</div>
                         </div>
                         <div className="editButton" data-index={index} data-type="packages">edit</div>
@@ -129,10 +129,10 @@ function ArticlesTrip(value = undefined) {// why must values be in {} for this f
                     </form>
                 </div>
 
-                <div className="notesInfo hidden">
+                <div className="notesInfo infoBox hidden">
                     <div className="notesInfoContainer hidden">
-                        <div>Notes: </div>
-                        <div>
+                        <div className="infoTitle">Notes: </div>
+                        <div className="infoMain">
                             <div className="notesInfoData infoData">{notes}</div>
                         </div>
                         <div className="editButton" data-index={index} data-type="notes">edit</div>
