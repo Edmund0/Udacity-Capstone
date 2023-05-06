@@ -24,7 +24,7 @@ describe("Testing the submit functionality", () => {
             expect(database.addInfo(index, type, "")).toBeFalsy();
             expect(database.removeInfo(index, type)).toBeFalsy();
 
-            index = "1";
+            index = "p1";
 
             expect(database.addInfo(index, type, "")).toBeTruthy();
             expect(database.removeInfo(index, type)).toBeTruthy();

@@ -3,7 +3,10 @@
 import h from 'vhtml'; /** @jsx h */
 
 // access json data (client-side) [IMPORTANT SHOULD BE CHANGED LATER]
-const data = require('../../assets/json/trips.json');
+// const data = require('../../assets/json/trips.json');
+
+import data from '../../assets/json/trips.json'
+import imageDefault from '../../assets/img/d8aaa0719185b24ecb075332c57b69aac6d9cb7843bc005de2b363f5048f3529.jpg'
 
 /****************************************************************************/
 /*                                                                          */
@@ -18,7 +21,8 @@ function ArticlesTrip(value = undefined) {// why must values be in {} for this f
     const i_default = "default";
     const index = (value === undefined) ? i_default : value;
 
-    const img_default = require('../../assets/img/d8aaa0719185b24ecb075332c57b69aac6d9cb7843bc005de2b363f5048f3529.jpg').default;
+    // const img_default = require('../../assets/img/d8aaa0719185b24ecb075332c57b69aac6d9cb7843bc005de2b363f5048f3529.jpg').default;
+    const img_default = imageDefault;
     const image = (index == "default") ? img_default : data[index].image; //replaces statically imported image with url path (API RELATED)
 
     const destination = data[index].destination;

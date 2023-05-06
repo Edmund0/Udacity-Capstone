@@ -9,7 +9,9 @@
     //PROBLEM: REMEMBER FIGURE OUT HOW TO GET WEBPACK TO MOVE THE JSON INTO THE DIST BUILD
 
     // access json data (client-side) [IMPORTANT SHOULD BE CHANGED LATER]
-    const data = require('../../assets/json/trips.json');
+    // const data = require('../../assets/json/trips.json');
+    import data from '../../assets/json/trips.json'
+    import imageDefault from '../../assets/img/d8aaa0719185b24ecb075332c57b69aac6d9cb7843bc005de2b363f5048f3529.jpg'
 
 
         /********************************************************************************/
@@ -38,7 +40,8 @@
     const addTrip = (img, destination, departing, forecast, highest, lowest) => {
 
         const index = generateIndex();
-        const img_default = require('../../assets/img/d8aaa0719185b24ecb075332c57b69aac6d9cb7843bc005de2b363f5048f3529.jpg').default;
+        // const img_default = require('../../assets/img/d8aaa0719185b24ecb075332c57b69aac6d9cb7843bc005de2b363f5048f3529.jpg').default;
+        const img_default = imageDefault;
 
         const entry = {
             image: `${(img === undefined) ? img_default : img}`,

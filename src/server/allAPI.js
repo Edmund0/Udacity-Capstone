@@ -74,7 +74,6 @@ const Pixabay_API = process.env.Pixabay_API;
             .then(response => response.json())
             .then(response => response)
 
-            console.log(url)
         return response
         
     }
