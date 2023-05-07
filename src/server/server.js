@@ -20,7 +20,7 @@
         app.use(cors());
 
     // Initialize the main project folder
-    app.use(express.static('client'));
+    app.use(express.static('dist'));
 
     // Prevents Fetch from being rejected due to it coming from a different domain
     app.use(function(req, res, next) {
@@ -44,6 +44,8 @@
         }
 
     const server = app.listen(port, host, listening);       // For testing only (DELETE HOST LATER)!
+
+    // NOTE IF THE EXPRESS SERVER LOCATION CHANGES MAKE S
 
 
 /**********************************/

@@ -35,8 +35,12 @@ async function handleSubmit(formData) {// This function would be used in the sub
         return null;
 
 	} else {
-
-		let newData = await postData('http://localhost:8081/sendData', {formData: formData});
+		  
+		const url = 'http://localhost:8081/' 
+		// const url = window.location.href; // returns 'http://localhost:8080/'
+		console.log(url);
+		  
+		let newData = await postData(`${url}sendData`, {formData: formData});
         return newData;
 
     }
