@@ -22,6 +22,12 @@
     // Initialize the main project folder
     app.use(express.static('dist'));
 
+        // designates the html entrypoint for the web app
+        app.get('/', function (req, res) {
+            res.sendFile('dist/index.html')
+            //res.sendFile(path.resolve('src/client/views/index.html'))
+        })
+
     // Prevents Fetch from being rejected due to it coming from a different domain
     app.use(function(req, res, next) {
         res.header("Access-Control-Allow-Origin", "*");
