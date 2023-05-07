@@ -60,7 +60,8 @@ import ArticlesTrip from './articles';
             
             if (JSON.stringify(formData) === JSON.stringify({error: "invalid destination"})) {
 
-                console.log(formData);
+                // console.log(formData);
+                alert("The destination entered is invalid, please check the spelling and try again!");
 
             } else {
 
