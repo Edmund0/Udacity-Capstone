@@ -1,5 +1,6 @@
 # Udacity-Capstone
 
+<br />
 
 ## SUMMARY
 
@@ -10,7 +11,13 @@ NOTE: If the destination entered does not exist in the Geonames database (or was
                 // console.log(formData);
                 alert("The destination entered is invalid, please check the spelling and try again!");
 
-WARNING: My project uses environmental variables for the API Keys. Please see the section "Additional System Configuration" to learn more.
+WARNING: The project uses environmental variables for the API Keys. Please see the section "Additional System Configuration" to learn more.
+
+<br />
+
+### PLEASE IGNORE
+
+Please ignore the "client/js/components/deprecated" folder. It was an attempt at a potential future expansion. 
 
 <br />
 
@@ -68,7 +75,7 @@ For Production Mode (Webpack lives on localhost:8080):
 
 ## USAGE OUTSIDE THE LOCALHOST ENVIRONMENT 
 
-If you plan on deploying this project on an actual server (i.e. not on local host), you need to change the following code from:
+If the intent is for this project to be deployed on an actual server (i.e. not on local host), the following code need to be changed from:
 
 ```js
 		const url = 'http://localhost:8081/' 
