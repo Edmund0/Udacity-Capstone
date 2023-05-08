@@ -56,17 +56,21 @@ import ArticlesTrip from './articles';
                 // FETCH REQUEST TO SERVER TO GET MORE INFORMATION [WEATHER DATA, IMAGE URL, AND SO ON] [* INFRASTRUCTURE NEED TO BE BUILT *]
                     // USE HANDLE SUBMIT TO SEND FORMDATA AND RECIEVE NEWDATA (FORMATED)
 
-                const formData = await handleSubmit(destination);
+                const newData = await handleSubmit(destination);
             
-            if (JSON.stringify(formData) === JSON.stringify({error: "invalid destination"})) {
+            if (JSON.stringify(newData) === JSON.stringify({error: "invalid destination"})) {
 
-                // console.log(formData);
+                // console.log(newData);
                 alert("The destination entered is invalid, please check the spelling and try again!");
+
+            } else if (newData.hasOwnProperty("error")) {
+
+                console.log(newData);
 
             } else {
 
                 // ADD INFORMATION TO JSON DATA
-                const index = database.addTrip(formData.url, `${formData.formCity}, ${formData.formCountry}`, departing, formData.weather, formData.high, formData.low);
+                const index = database.addTrip(newData.url, `${newData.formCity}, ${newData.formCountry}`, departing, newData.weather, newData.high, newData.low);
 
                 // BUILD TEMPLATE USING ARTICLES
                 // ADD TEMPLATE TO HTML (REPAINT AND REFLOW)
