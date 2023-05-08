@@ -1,3 +1,5 @@
+const fetch = require('node-fetch');
+
 /**********************************************/
 /*      BASIC ENVIRONMENT VARIABLE SETUP      */
 /**********************************************/
@@ -8,7 +10,6 @@
     const Geo_API = process.env.Geo_API;
     const Weatherbit_API = process.env.Weatherbit_API;
     const Pixabay_API = process.env.Pixabay_API;
-
 
 /**********************************************/
 /*      BASIC ROUTE SETUP FOR REQUIRED API    */
