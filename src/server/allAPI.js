@@ -101,7 +101,6 @@
                 .then(response => response.json())
                 .then(response => response)
 
-                console.log(url)
                 if (response.total) { return response }
 
 
@@ -110,7 +109,6 @@
                 .then(response => response.json())
                 .then(response => response)
 
-                console.log(url)
                 if (response.total) { return response }
 
 
@@ -119,7 +117,6 @@
                 .then(response => response.json())
                 .then(response => response)
 
-                console.log(url)
                 if (response.total) { return response }
 
         } catch {
