@@ -1,5 +1,16 @@
 {
     "version": 2,
+    "builds": [
+        {
+          "src": "path/to/frontend",
+          "use": "@vercel/static",
+          "config": { "zeroConfig": true }
+        },
+        {
+          "src": "path/to/api",
+          "use": "@vercel/node"
+        }
+    ],
     "routes": [
       { "src": "/sendData", "dest": "server.js" },
       { "src": "/(.*)", "dest": "dist/$1" }
