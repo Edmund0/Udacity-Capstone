@@ -1,7 +1,7 @@
 {
     "version": 2,
     "routes": [
-      { "src": "/sendData", "dest": "server.js" },
+      { "src": "/sendData", "dest": "src/server/sendData.js" },
       { "src": "/(.*)", "dest": "dist/$1" }
     ]
   }
