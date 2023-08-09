@@ -59,5 +59,10 @@ module.exports = {
         minimizer: [
           new CssMinimizerPlugin(),
         ],
-      }
+    },
+    output: {
+        path: path.resolve(__dirname, 'dist'), // Output path for your built files
+        publicPath: '/', // Public path used by your assets (e.g., CSS, JS, images)
+        // ...
+    },
 }

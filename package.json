@@ -7,7 +7,8 @@
     "test": "jest --config jest.config.js",
     "start": "node src/server/server.js",
     "build-prod": "webpack --config webpack.prod.js",
-    "build-dev": "webpack-dev-server --config webpack.dev.js --open"
+    "build-dev": "webpack-dev-server --config webpack.dev.js --open",
+    "vercel-build": "npm run build-prod"
   },
   "engines": {
     "node": "14.x"

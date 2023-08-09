@@ -40,16 +40,18 @@
 /**********************************/
 
     // Setup Server
-    port = 8081;
-    host = 'localhost';                                     // For testing only (DELETE HOST LATER)!
+    // port = 8081;
+    // host = 'localhost';                                     // For testing only (DELETE HOST LATER)!
 
     function listening() {  
-            const host = server.address().address;
-            const port = server.address().port;
-            console.log("Example app listening at http://%s:%s", host, port);
+            // const host = server.address().address;
+            // const port = server.address().port;
+            // console.log("Example app listening at http://%s:%s", host, port);
         }
 
-    const server = app.listen(port, host, listening);       // For testing only (DELETE HOST LATER)!
+    // const server = app.listen(port, host, listening);       // For testing only (DELETE HOST LATER)!
+
+    const server = app.listen(listening); 
 
     // NOTE IF THE EXPRESS SERVER LOCATION CHANGES MAKE S
 
@@ -63,7 +65,7 @@ const generalAnalysis = require('./allAPI')
 /* BASIC ROUTES FOR API */
 let formData = ""
 
-    app.post('/sendData', async function (req, res) {
+    app.post('/api/sendData', async function (req, res) {
         
         formData = req.body.formData
         try {res.send(await generalAnalysis(formData));
