@@ -74,3 +74,5 @@ let formData = ""
 
     })
 
+// Export the Express API
+module.exports = app;

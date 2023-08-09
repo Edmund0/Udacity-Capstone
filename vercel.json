@@ -1,7 +1,13 @@
 {
     "version": 2,
+    "builds": [
+        {
+          "src": "server/server.js",
+          "use": "@now/node"
+        }
+      ],
     "routes": [
       { "src": "/sendData", "dest": "src/server/sendData.js" },
-      { "src": "/(.*)", "dest": "dist/$1" }
+      { "src": "/(.*)", "dest": "server/server.js" }
     ]
   }
